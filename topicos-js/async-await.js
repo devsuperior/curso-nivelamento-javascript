@@ -1,7 +1,10 @@
-const fetchCep = async () => {    
-    const response = await fetch("https://viacep.com.br/ws/01001000/json/");
+const fetchCep = async (url) => {    
+    const response = await fetch(url);
     const jsonBody = await response.json();
     return jsonBody;
 }
 
-console.log(fetchCep());
+fetchCep("https://viacep.com.br/ws/01001000/json/").then(response => {
+    console.log(response);
+});
+
