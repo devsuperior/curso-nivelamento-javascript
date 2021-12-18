@@ -1,6 +1,4 @@
-// REST
-
-// * valores passados com virgula sao recebidos como array
+// REST: valores passados com virgula => array
 
 function sum(...numbers) {
     let total = 0;
@@ -18,7 +16,7 @@ const result2 = Math.max(2, 3, 10, 5);
 
 console.log(result2);
 
-// SPREAD
+// SPREAD: array => valores separados por virgula
 
 const result3 = Math.max(4, 7, 2);
 
@@ -32,7 +30,7 @@ const result4 = Math.max(...myNumbers);
 
 console.log(result4);
 
-
+// SPREAD: objeto => membros separados por virgula
 
 const item = {
     description: "Celular",

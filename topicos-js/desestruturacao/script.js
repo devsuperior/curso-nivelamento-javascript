@@ -1,5 +1,3 @@
-// DESESTRUTURAÇÃO
-
 const obj = {
     id: 53,
     date: "2021-10-20",
