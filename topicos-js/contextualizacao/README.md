@@ -23,6 +23,8 @@
 
 - Todo navegador moderno possui suporte a JavaScript
 
+- Em 2015 foi lançada a ES6, que trouxe melhorias importantes para a ECMAScript
+
 ### Visão geral: linguagem
 
 - Multiparadigma (imperativo, oo, funcional)
