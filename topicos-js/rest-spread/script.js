@@ -18,17 +18,13 @@ console.log(result2);
 
 // SPREAD: array => valores separados por virgula
 
-const result3 = Math.max(4, 7, 2);
-
-console.log(result3);
-
 const myNumbers = [2, 3, 10, 5];
 
-//const result4 = Math.max(myNumbers); // Nao funciona
+//const result3 = Math.max(myNumbers); // Nao funciona
 
-const result4 = Math.max(...myNumbers);
+const result3 = Math.max(...myNumbers);
 
-console.log(result4);
+console.log(result3);
 
 // SPREAD: objeto => membros separados por virgula
 

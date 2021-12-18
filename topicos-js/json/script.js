@@ -39,3 +39,19 @@ console.log(obj3);
 console.log(obj3.id);
 console.log(obj3.client);
 console.log(obj3.client.name);
+
+const txt = `{"name": "Computador", "price": 50.9, "due-date": "2025-04-15"}`;
+
+console.log(txt);
+
+console.log("NAME: ", txt.name);
+
+const obj = JSON.parse(txt);
+
+console.log(obj);
+
+console.log("NAME: ", obj.name);
+
+const text = JSON.stringify(obj);
+
+console.log(text);
