@@ -58,7 +58,7 @@ console.log(obj3.client.name);
 ### parse / stringify
 
 ```javascript
-const txt = `{"name": "Computador", "price": 50.9, "due-date": 2025-04-15"}`;
+const txt = `{"name": "Computador", "price": 50.9, "due-date": "2025-04-15"}`;
 
 console.log(txt);
 
