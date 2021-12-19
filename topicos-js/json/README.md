@@ -58,21 +58,13 @@ console.log(obj3.client.name);
 ### parse / stringify
 
 ```javascript
-const txt = `{"name": "Computador", "price": 50.9, "due-date": "2025-04-15"}`;
-
-console.log(txt);
-
-console.log("ID: ", txt.id);
+const txt = `{"nome": "Computador", "price": 50.9, "due-date": "2025-04-15"}`;
 
 const obj = JSON.parse(txt);
 
-console.log("ID: ", obj.id);
+console.log(txt.name);
 
-console.log(obj.items[0]);
-
-console.log(obj.items[1].price);
+console.log(obj.nome);
 
 const text = JSON.stringify(obj);
-
-console.log(text);
 ```
