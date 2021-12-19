@@ -13,6 +13,8 @@ Classes em JavaScript são um `syntactic sugar` para funções contrutoras e pro
 
 Isso significa que a classe é apenas uma forma alternativa de se escrever um tipo com propriedades e métodos. Mas internamente a estrutura será a mesma, baseada em prototypes.
 
+![Image](https://raw.githubusercontent.com/devsuperior/curso-nivelamento-javascript/main/img/product.png "Diagrama classe Product")
+
 ```javascript
 class Product {
   constructor(name, price, quantity) {
