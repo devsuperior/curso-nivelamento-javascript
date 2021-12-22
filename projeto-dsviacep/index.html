@@ -22,48 +22,64 @@
       </nav>
     </header>
     <main>
-        <section id="form-section" class="form-container">
-            <div class="card-form">
-                <form>
-                    <input class="form-input" type="text" placeholder="CEP">
-                    <input class="form-input" type="text" placeholder="Logradouro">
-                    <input class="form-input" type="text" placeholder="Número">
-                    <input class="form-input" type="text" placeholder="Cidade">
+      <section id="form-section" class="form-container">
+        <div class="card-form">
+          <form>
+            <input
+              data-elem="inputCep"
+              class="form-input"
+              type="text"
+              maxlength="8"
+              placeholder="CEP"
+            />
+            <input
+              data-elem="inputStreet"
+              class="form-input"
+              type="text"
+              placeholder="Logradouro"
+              disabled
+            />
+            <input
+              data-elem="inputNumber"
+              class="form-input"
+              type="text"
+              placeholder="Número"
+            />
+            <input
+              data-elem="inputCity"
+              class="form-input"
+              type="text"
+              placeholder="Cidade"
+              disabled
+            />
 
-                    <div class="form-buttons-container">
-                        <button class="form-button btn-left" type="submit">Salvar</button>
-                        <button class="form-button btn-right">Limpar</button>
-                    </div>
-                </form>
+            <div class="form-buttons-container">
+              <button
+                data-elem="btnSave"
+                class="form-button btn-left"
+                type="submit"
+              >
+                Salvar
+              </button>
+              <button data-elem="btnClear" class="form-button btn-right">
+                Limpar
+              </button>
             </div>
-        </section>
-        <section id="list-section" class="list-container">
-            <div class="card-list-item">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 750</p>
-                <p><small>11200-345</small></p>
-            </div>
-            <div class="card-list-item">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 750</p>
-                <p><small>11200-345</small></p>
-            </div>
-            <div class="card-list-item">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 750</p>
-                <p><small>11200-345</small></p>
-            </div>
-            <div class="card-list-item">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 750</p>
-                <p><small>11200-345</small></p>
-            </div>
-            <div class="card-list-item">
-                <h3>São Paulo</h3>
-                <p>Rua dos Jardins, 750</p>
-                <p><small>11200-345</small></p>
-            </div>
-        </section>
+          </form>
+        </div>
+      </section>
+      <section id="list-section" class="list-container">
+        <div class="card-list-item">
+          <h3>São Paulo</h3>
+          <p class="address-line">Rua dos Jardins, 750</p>
+          <p class="address-cep">11200-345</p>
+        </div>
+        <div class="card-list-item">
+          <h3>São Paulo</h3>
+          <p class="address-line">Rua dos Jardins, 750</p>
+          <p class="address-cep">11200-345</p>
+        </div>
+      </section>
     </main>
     <script type="module" src="js/dsviacep.js"></script>
   </body>

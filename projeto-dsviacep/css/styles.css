@@ -57,6 +57,10 @@ html, body {
     color: #c9c9c9;
 }
 
+.form-input:disabled {
+    background-color: #ddd;
+}
+
 .form-buttons-container {
     display: flex;
     justify-content: space-between;
@@ -104,12 +108,12 @@ html, body {
     color: #ff8400;
 }
 
-.card-list-item p {
+.address-line {
     font-size: 14px;
     color: #fff;
 }
 
-.card-list-item p small {
+.address-cep {
     font-size: 12px;
     color: #8f8f8f;
 }
