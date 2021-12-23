@@ -42,6 +42,10 @@ html, body {
     background-color: #333;
 }
 
+.card-form label {
+    display: none;
+}
+
 .form-input {
     height: 50px;
     display: block;

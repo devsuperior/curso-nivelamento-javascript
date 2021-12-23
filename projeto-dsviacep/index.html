@@ -24,35 +24,50 @@
     <main>
       <section id="form-section" class="form-container">
         <div class="card-form">
-          <form>
-            <input
-              data-elem="inputCep"
-              class="form-input"
-              type="text"
-              maxlength="8"
-              placeholder="CEP"
-            />
-            <input
-              data-elem="inputStreet"
-              class="form-input"
-              type="text"
-              placeholder="Logradouro"
-              disabled
-            />
-            <input
-              data-elem="inputNumber"
-              class="form-input"
-              type="text"
-              placeholder="Número"
-            />
-            <input
-              data-elem="inputCity"
-              class="form-input"
-              type="text"
-              placeholder="Cidade"
-              disabled
-            />
-
+          <form name="newAddress">
+            <div>
+              <label for="cep">CEP</label>
+              <input
+                name="cep"
+                id="cep"
+                class="form-input"
+                type="text"
+                maxlength="8"
+                placeholder="CEP"
+              />
+            </div>
+            <div>
+              <label for="street">CEP</label>
+              <input
+                name="street"
+                id="street"
+                class="form-input"
+                type="text"
+                placeholder="Logradouro"
+                disabled
+              />
+            </div>
+            <div>
+              <label for="number">CEP</label>
+              <input
+                name="number"
+                id="number"
+                class="form-input"
+                type="text"
+                placeholder="Número"
+              />
+            </div>
+            <div>
+              <label for="city">CEP</label>
+              <input
+                name="city"
+                id="city"
+                class="form-input"
+                type="text"
+                placeholder="Cidade"
+                disabled
+              />
+            </div>
             <div class="form-buttons-container">
               <button
                 data-elem="btnSave"

@@ -5,7 +5,7 @@ function State() {
 const state = new State();
 
 export function init() {
-  state.listSection = document.getElementById('list-section');
+  state.listSection = document.querySelector('#list-section');
 }
 
 export function addCard(address) {

@@ -19,6 +19,6 @@ Se durante a execução da lógica da função `f`, a função `g` for chamada c
 
 Se durante a execução da lógica da função `f`, a função `h` for chamada com o argumento Q (opcional), então o estado da promise mudará para "rejected" (rejeitada), e o resultado da promise será o valor Q. 
 
-O método `then` de uma promise recebe como argumento uma função, e executa esta função passando o valor P para ela, caso a promise seja resolvida.
+O método `then` de uma promise recebe como argumento uma função, e executa esta função passando o valor P para ela, quando a promise for resolvida.
 
-O método `catch` de uma promise recebe como argumento uma função, e execute esta função passando o valor Q para ela, caso a promise seja rejeitada.
+O método `catch` de uma promise recebe como argumento uma função, e execute esta função passando o valor Q para ela, quando a promise for rejeitada.

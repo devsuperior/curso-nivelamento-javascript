@@ -16,17 +16,22 @@ function State() {
 const state = new State();
 
 export function init() {
+  state.inputCep = document.forms.newAddress.cep; 
+  state.inputStreet = document.forms.newAddress.street; 
+  state.inputNumber = document.forms.newAddress.number; 
+  state.inputCity = document.forms.newAddress.city; 
+
   state.btnSave = document.querySelector('[data-elem="btnSave"]');
   state.btnClear = document.querySelector('[data-elem="btnClear"]');
-  state.inputCep = document.querySelector('[data-elem="inputCep"]');
-  state.inputStreet = document.querySelector('[data-elem="inputStreet"]');
-  state.inputNumber = document.querySelector('[data-elem="inputNumber"]');
-  state.inputCity = document.querySelector('[data-elem="inputCity"]');
 
   state.btnSave.addEventListener("click", handleBtnSaveClick);
   state.btnClear.addEventListener("click", handleBtnClearClick);
   state.inputCep.addEventListener("change", handleInputCepChange);
   state.inputNumber.addEventListener("keyup", handleInputNumberKeyup);
+
+  console.log(document.forms.newAddress.elements);
+  console.log(state.btnSave.dataset);
+  console.log(state);
 }
 
 function handleBtnSaveClick(event) {

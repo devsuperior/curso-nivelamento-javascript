@@ -34,12 +34,14 @@
 - JavaScript assíncrono
   - [setTimeout](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/settimeout)
   - [Promises](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/promises)
-  - Fetch API
-  - async / await
+  - [Fetch API](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/fetch)
+  - [async / await](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/async-await)
 - Introdução à manipulação de DOM
-  - Seleção de elementos
-  - Eventos
+  - [Visão geral](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/dom)
+  - [Seleção de elementos](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/selecao)
+  - [Eventos de UI](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/eventos)
 - Projeto final
+  - [Projeto DSViaCEP](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/projeto-dsviacep)
 
 #### Referências
 
