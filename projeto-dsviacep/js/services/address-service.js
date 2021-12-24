@@ -1,6 +1,5 @@
 import * as requestService from "./request-service.js";
 import Address from "../models/address.js";
-import DomainException from "./exceptions/domain-exception.js";
 
 export async function findByCep(cep) {
   const url = `https://viacep.com.br/ws/${cep}/json/`;
@@ -10,13 +9,15 @@ export async function findByCep(cep) {
   return address;
 }
 
-export function validate(address) {
-    if (!address.cep || address.cep == "") {
-        throw new DomainException("CEP do endereço não pode ser vazio");
-    }
-    if (!address.number || address.number == "") {
-        throw new DomainException("Número do endereço não pode ser vazio");
-    }
+export function getErrors(address) {
+  const errors = {};
+  if (!address.cep || address.cep == "") {
+    errors.cep = "Campo requerido";
+  }
+  if (!address.number || address.number == "") {
+    errors.number = "Campo requerido";
+  }
+  return errors;
 }
 
 function copyViaCepToAddress(viacepObj, address) {

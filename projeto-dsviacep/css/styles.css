@@ -1,3 +1,6 @@
+@import 'modal.css';
+@import 'button.css';
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -22,11 +25,19 @@ html, body {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-main h1 {
     color: #FFF;
     font-size: 36px;
+}
+
+.contact-link {
+    color: #fff;
+    cursor: pointer;
 }
 
 .form-container {
@@ -46,11 +57,14 @@ html, body {
     display: none;
 }
 
+.form-control {
+    margin-bottom: 20px;
+}
+
 .form-input {
     height: 50px;
     display: block;
     width: 100%;
-    margin-bottom: 20px;
     border-radius: 4px;
     padding: 0 20px;
     font-size: 14px;
@@ -65,29 +79,9 @@ html, body {
     background-color: #ddd;
 }
 
-.form-buttons-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-button {
-    height: 50px;
-    background-color: #ff8400;
-    border: 0;
-    border-radius: 4px;
-    padding: 0 20px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    width: 250px;
-}
-
-.btn-right {
-    margin-left: 10px;
-}
-
-.btn-left {
-    margin-right: 10px;
+.error-message {
+    margin-top: 5px;
+    color: #faa;
 }
 
 .list-container {

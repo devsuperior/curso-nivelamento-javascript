@@ -11,6 +11,9 @@ function State() {
   this.inputStreet = null;
   this.inputNumber = null;
   this.inputCity = null;
+
+  this.errorCep = null;
+  this.errorNumber = null;
 }
 
 const state = new State();
@@ -21,32 +24,37 @@ export function init() {
   state.inputNumber = document.forms.newAddress.number; 
   state.inputCity = document.forms.newAddress.city; 
 
-  state.btnSave = document.querySelector('[data-elem="btnSave"]');
-  state.btnClear = document.querySelector('[data-elem="btnClear"]');
+  state.btnSave = document.forms.newAddress.btnSave;
+  state.btnClear = document.forms.newAddress.btnClear;
+
+  state.errorCep = document.querySelector('[data-error="cep"]');
+  state.errorNumber = document.querySelector('[data-error="number"]');
 
   state.btnSave.addEventListener("click", handleBtnSaveClick);
   state.btnClear.addEventListener("click", handleBtnClearClick);
   state.inputCep.addEventListener("change", handleInputCepChange);
+  state.inputNumber.addEventListener("change", handleInputNumberChange);
   state.inputNumber.addEventListener("keyup", handleInputNumberKeyup);
 
-  console.log(document.forms.newAddress.elements);
-  console.log(state.btnSave.dataset);
   console.log(state);
 }
 
 function handleBtnSaveClick(event) {
   event.preventDefault();
-  try {
-    addressService.validate(state.address);
+
+  const errors = addressService.getErrors(state.address);
+  
+  const keys = Object.keys(errors);
+
+  if (keys.length > 0) {
+    keys.forEach(key => {
+      setFormError(key, errors[key]);      
+    });
+  }
+  else {
     listController.addCard(state.address);
     clearForm();
-  } catch (e) {
-    window.alert(e);
   }
-}
-
-function handleInputNumberKeyup(event) {
-    state.address.number = event.target.value;
 }
 
 async function handleInputCepChange(event) {
@@ -54,13 +62,25 @@ async function handleInputCepChange(event) {
 
   try {
     const address = await addressService.findByCep(cep);
-    setFormState(address);
+    
+    state.inputCep.value = address.cep;
+    state.inputStreet.value = address.street;
+    state.inputCity.value = address.city;
     state.address = address;
+
+    setFormError("cep", "");
     state.inputNumber.focus();
   } catch (e) {
-    clearForm();
-    window.alert("Favor digitar um CEP válido");
+    setFormError("cep", "Informe um CEP válido");
   }
+}
+
+function handleInputNumberKeyup(event) {
+  state.address.number = event.target.value;
+}
+
+function handleInputNumberChange() {
+  setFormError("number", "");
 }
 
 function handleBtnClearClick(event) {
@@ -73,12 +93,16 @@ function clearForm() {
   state.inputStreet.value = "";
   state.inputNumber.value = "";
   state.inputCity.value = "";
+
+  state.errorCep.innerHTML = "";
+  state.errorNumber.innerHTML = "";
+
   state.address = new Address();
+
   state.inputCep.focus();
 }
 
-function setFormState(address) {
-  state.inputCep.value = address.cep;
-  state.inputStreet.value = address.street;
-  state.inputCity.value = address.city;
+function setFormError(key, value) {
+  const element = document.querySelector(`[data-error="${key}"]`);
+  element.innerHTML = value;
 }

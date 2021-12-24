@@ -19,13 +19,14 @@
     <header class="nav-container">
       <nav class="nav-main">
         <h1>DSViaCEP</h1>
+        <div class="contact-link">contato</div>
       </nav>
     </header>
     <main>
       <section id="form-section" class="form-container">
         <div class="card-form">
           <form name="newAddress">
-            <div>
+            <div class="form-control">
               <label for="cep">CEP</label>
               <input
                 name="cep"
@@ -35,8 +36,9 @@
                 maxlength="8"
                 placeholder="CEP"
               />
+              <div class="error-message" data-error="cep"></div>
             </div>
-            <div>
+            <div class="form-control">
               <label for="street">CEP</label>
               <input
                 name="street"
@@ -47,7 +49,7 @@
                 disabled
               />
             </div>
-            <div>
+            <div class="form-control">
               <label for="number">CEP</label>
               <input
                 name="number"
@@ -56,8 +58,9 @@
                 type="text"
                 placeholder="Número"
               />
+              <div class="error-message" data-error="number"></div>
             </div>
-            <div>
+            <div class="form-control">
               <label for="city">CEP</label>
               <input
                 name="city"
@@ -68,17 +71,11 @@
                 disabled
               />
             </div>
-            <div class="form-buttons-container">
-              <button
-                data-elem="btnSave"
-                class="form-button btn-left"
-                type="submit"
-              >
+            <div class="btn-container">
+              <button name="btnSave" class="btn btn-left" type="submit">
                 Salvar
               </button>
-              <button data-elem="btnClear" class="form-button btn-right">
-                Limpar
-              </button>
+              <button name="btnClear" class="btn btn-right">Limpar</button>
             </div>
           </form>
         </div>
@@ -96,6 +93,14 @@
         </div>
       </section>
     </main>
+    <section class="modal-container" id="modal-contact-container">
+      <div class="modal-box">
+        <div class="modal-content-container">
+          <p>@devsuperior.ig</p>
+        </div>
+        <button class="btn" id="modal-contact-close">Fechar</button>
+      </div>
+    </section>
     <script type="module" src="js/dsviacep.js"></script>
   </body>
 </html>
