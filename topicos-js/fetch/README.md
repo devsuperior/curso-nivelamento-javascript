@@ -9,6 +9,10 @@
 
 ## JavaScript - Fetch API
 
+https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch
+
+https://www.w3schools.com/js/js_api_fetch.asp
+
 ```javascript
 const cep = "01001000";
 
