@@ -1,16 +1,17 @@
 function State() {
     this.container = null;
     this.btnClose = null;
-} 
+}
 
 const state = new State();
 
 export function init() {
-    state.container = document.querySelector("#modal-contact-container");
+
+    state.container = document.querySelector("#modal-contact");
     state.btnClose = document.querySelector("#modal-contact-close");
-    
-    state.container.addEventListener('click', handleContainerClick);
+
     state.btnClose.addEventListener('click', handleBtnCloseClick);
+    state.container.addEventListener('click', handleContainerClick);
 }
 
 export function showModal() {
@@ -27,7 +28,6 @@ function handleBtnCloseClick(event) {
 }
 
 function handleContainerClick(event) {
-    //console.log(event.target, this);
     event.preventDefault();
     if (event.target === this) {
         closeModal();

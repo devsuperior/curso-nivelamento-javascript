@@ -41,7 +41,7 @@
   - [Seleção de elementos](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/selecao)
   - [Eventos de UI](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/eventos)
 - Projeto final
-  - [Projeto DSViaCEP](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/projeto-dsviacep)
+  - [Projeto DSViaCEP](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/projeto-dsviacep)
 
 #### Referências
 

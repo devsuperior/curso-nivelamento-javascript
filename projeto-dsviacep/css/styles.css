@@ -1,5 +1,5 @@
 @import 'modal.css';
-@import 'button.css';
+@import 'buttons.css';
 
 * {
     box-sizing: border-box;
@@ -13,8 +13,8 @@ html, body {
 }
 
 .nav-container {
-    background-color: #ff8400;
     height: 80px;
+    background-color: #ff8400;
     width: 100%;
     padding: 0 20px;
     display: flex;
@@ -31,7 +31,7 @@ html, body {
 }
 
 .nav-main h1 {
-    color: #FFF;
+    color: #fff;
     font-size: 36px;
 }
 
@@ -46,24 +46,29 @@ html, body {
 }
 
 .card-form {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 8px;
     background-color: #333;
-}
-
-.card-form label {
-    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .form-control {
     margin-bottom: 20px;
 }
 
+.form-control label {
+    display: none;
+}
+
+.error-message {
+    margin-top: 5px;
+    color: #faa;
+}
+
 .form-input {
     height: 50px;
-    display: block;
     width: 100%;
     border-radius: 4px;
     padding: 0 20px;
@@ -72,20 +77,16 @@ html, body {
 }
 
 .form-input::placeholder {
-    color: #c9c9c9;
+    color: #C9C9C9;
 }
 
 .form-input:disabled {
     background-color: #ddd;
 }
 
-.error-message {
-    margin-top: 5px;
-    color: #faa;
-}
-
 .list-container {
     width: 100%;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -94,24 +95,25 @@ html, body {
 
 .card-list-item {
     background-color: #333;
-    border-radius: 4px;
-    padding: 20px;
+    color: #fff;
     margin-bottom: 20px;
     width: 100%;
     max-width: 900px;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .card-list-item h3 {
-    font-size: 18px;
     color: #ff8400;
+    font-size: 18px;
 }
 
 .address-line {
-    font-size: 14px;
     color: #fff;
+    font-size: 14px;
 }
 
 .address-cep {
-    font-size: 12px;
     color: #8f8f8f;
+    font-size: 12px;
 }

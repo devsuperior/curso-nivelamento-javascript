@@ -27,19 +27,18 @@
         <div class="card-form">
           <form name="newAddress">
             <div class="form-control">
-              <label for="cep">CEP</label>
+              <label for="cep">CEP:</label>
               <input
                 name="cep"
                 id="cep"
                 class="form-input"
                 type="text"
-                maxlength="8"
                 placeholder="CEP"
               />
               <div class="error-message" data-error="cep"></div>
             </div>
             <div class="form-control">
-              <label for="street">CEP</label>
+              <label for="street">Logradouro:</label>
               <input
                 name="street"
                 id="street"
@@ -50,7 +49,7 @@
               />
             </div>
             <div class="form-control">
-              <label for="number">CEP</label>
+              <label for="number">Número:</label>
               <input
                 name="number"
                 id="number"
@@ -61,7 +60,7 @@
               <div class="error-message" data-error="number"></div>
             </div>
             <div class="form-control">
-              <label for="city">CEP</label>
+              <label for="city">Cidade:</label>
               <input
                 name="city"
                 id="city"
@@ -83,24 +82,21 @@
       <section id="list-section" class="list-container">
         <div class="card-list-item">
           <h3>São Paulo</h3>
-          <p class="address-line">Rua dos Jardins, 750</p>
-          <p class="address-cep">11200-345</p>
-        </div>
-        <div class="card-list-item">
-          <h3>São Paulo</h3>
-          <p class="address-line">Rua dos Jardins, 750</p>
+          <p class="address-line">Rua dos Jardins, 720</p>
           <p class="address-cep">11200-345</p>
         </div>
       </section>
     </main>
-    <section class="modal-container" id="modal-contact-container">
+    <section id="modal-contact" class="modal-container">
       <div class="modal-box">
-        <div class="modal-content-container">
+        <div class="modal-content">
           <p>@devsuperior.ig</p>
         </div>
-        <button class="btn" id="modal-contact-close">Fechar</button>
+        <button id="modal-contact-close" class="btn">Fechar</button>
       </div>
+
     </section>
+
     <script type="module" src="js/dsviacep.js"></script>
   </body>
 </html>
