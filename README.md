@@ -11,6 +11,7 @@
 
 - Lógica de programação (qualquer linguagem)
 - Programação orientada a objetos (qualquer linguagem)
+- HTML/CSS básico
 
 #### Tópicos
 
