@@ -22,6 +22,7 @@
   - [Strings](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/strings)
   - [Operadores](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/operadores)
   - [Estruturas de controle](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/estruturas-de-controle)
+  - [Introdução aos arrays](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/arrays)
 - Tópicos básicos PARTE 2
   - [JSON](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/json)
   - [Funções / notação arrow function](https://github.com/devsuperior/curso-nivelamento-javascript/tree/main/topicos-js/funcoes)
